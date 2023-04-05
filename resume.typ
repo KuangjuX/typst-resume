@@ -37,7 +37,7 @@
 == Selected Awards
   - NSCSCC Team Competition Third Prize in 2022
   - OSCOMP Team Competition Thrid Prize in 2021
-  - The Best Quality Award in Summer OSPP 2021
+  - Summer OSPP The Best Quality Award in 2021
 
 == Selected Projects
 
