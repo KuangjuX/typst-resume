@@ -2,101 +2,101 @@
 
 #show: chicv
 
-= Chi Zhang
+= ChengXiang Qi
 
-#fa[#envelope] skyzh\@cmu.edu |
-#fa[#github] #link("https://github.com/skyzh")[github.com/skyzh] |
-#fa[#globe] #link("https://skyzh.dev")[skyzh.dev] |
-#fa[#linkedin] #link("https://www.linkedin.com/in/alex-chi-skyzh/")[alex-chi-skyzh]
+#fa[#envelope] kuangjux\@outlook.com |
+#fa[#github] #link("https://github.com/KuangjuX")[github.com/KuangjuX] |
+#fa[#globe] #link("https://kuangjux.top")[kuangjux.top] |
+#fa[#linkedin] #link("https://www.linkedin.com/in/kuangjux/")[KungjuX]
 
 == Education
 #cventry(
-  tl: "Carnegie Mellon University",
-  tr:  "2022/08 - 2023/12 (Expected)",
-  bl: "Master of Science in Computer Science, GPA 4.09/4.33",
-  br: "Pittsburgh, PA, USA"
-)[
-  - Teaching Assistant for 15-445/645 Database Systems (Fall 2022, Spring 2023)
-]
+  tl: "University of Chinese Academy of Sciences",
+  tr:  "2023/08 - ",
+  bl: "Master of Computer Architecture",
+  br: "HangZhou, ZheJiang, China"
+)[]
 #cventry(
-  tl: "Shangehai Jiao Tong University",
-  tr: "2018/09 - 2022/06",
+  tl: "TianJin University",
+  tr: "2019/09 - 2023/06(Expected)",
   bl: "B. Eng in Computer Science and Technology",
-  br: "Shangehai, China"
+  br: "TianJin, China"
 )[
-  - GPA 93.80/100, Rank 1/149, National Scholarship 2019 (Top 0.2% national-wide)
-  - A+ Courses: Operating Systems, Computer Architecture, Computer Networks, and 28 others
-]
-== Work Experience
-#cventry(
-  tl: "RisingWave Labs",
-  tr: "2021/08 - 2022/07",
-  bl: "Database System R&D Intern",
-  br: "Shanghai, China"
-)[
-  - *Top contributor of #iconlink(
-    "https://github.com/risingwavelabs/risingwave",
-    text: "RisingWave",
-    icon: github)* _as of 2023/03_. RisingWave is a database system with PostgreSQL-compatible interface that incrementally maintains materialized views. Worked on the development of almost all components related to stream computing and state store.
-  - *Streaming Index Joins*: Designed shared state and streaming index in RisingWave; implemented index lookup join executor; implemented delta join DAG optimizer transformations; implemented distributed delta join scheduler
-  - *Performance Improvement*: Conducted intensive benchmarks and analyzed performance issues. Fixed bugs, proposed strategies, and led cross-team collaboration which improved the system throughput by 10x in a 3-month period
-  - *Developer Experience*. Initiated the RiseDev development tool to start a RisingWave cluster with one command, which is deeply integrated into the development workflow across unit testing, integration testing, and benchmarking. Built RisingWave Streaming Dashboard that shows cluster metrics and visualizes streaming query plans in one place
-  - *Mentoring*. Mentored database kernel interns and helped their integration into the team. Maintained overview documents of the database kernel to facilitate knowledge transfer and help new hires learn about the system.
+  - Teaching Assistant for ICS(Introduction to Computer System) in Fall 2021
 ]
 
-#cventry(
-  tl: "ByteDance, Ltd.",
-  tr: "2021/06 - 2021/08",
-  bl: "Storage System R&D Intern, TerarkDB Team",
-  br: "Beijing, China"
-)[
-  - *Co-Optimized #iconlink(text: "TerarkDB", icon: github, "https://github.com/bytedance/terarkdb")* and *#iconlink(text: "ZenFS", icon: github, "https://github.com/westerndigitalcorporation/zenfs")*. Implemented Zone-aware Garbage Collection in TerarkDB and WAL-Aware Zone Allocator in ZenFS, which reduced 3-4x of space amplification and improved the p999 tail latency by 100x
-  /*
-  - Implemented *Zone-Aware Garbage Collection* in *TerrakDB* for Zoned Namespace SSDs, which reduced 3-4x of space amplification caused by interleaving write lifetime in a single ZNS zone. #iconlink("https://github.com/bytedance/terarkdb", icon: github)
-  - Added observability facilities to *ZenFS* (by Western Digital) to analyze bottlenecks and implemented a *WAL-Aware Zone Allocator*, which reduced the p999 tail latency by 100x. #iconlink("https://github.com/bzbd/zenfs", icon: github)
-  */
-]
+
+== Skills
+  - *Programmimg Languages:* Rust, C, Go, Python, JavaScript, Assembly
+  - *Tools:* Linux, Git, GDB, QEMU, Makefile, Docker
+  - *System:* Familiar with the concepts and design of operating system kernels, and have experience designing and implementing operating system kernels using the Rust language. Passionate and knowledgeable about the RISC-V instruction set architecture, with multiple projects designed based on the RISC-V instruction set.
+  - *Arch:* I have previously designed and implemented a MIPS 32-bit processor core, have read some of CAAQA, and have implemented a out-of-order simulator of tomasulo algorithm in Rust.
+  - *Storage/DB:* Self-taught CMU 15-445, TiKV talent-plan, and some of MIT 6.824 and completed the corresponding labs.
+  - *Open Source Contributions:* I have contributed code to multiple open source projects such as \@rCore-Tutorial-v3, \@cs-self-learning, and \@rustyvisor, and my personal open source projects have a total of over 400 stars.
+
+== Selected Awards
+  - NSCSCC Team Competition Third Prize in 2022
+  - OSCOMP Team Competition Thrid Prize in 2021
+  - The Best Quality Award in Summer OSPP 2021
+
+== Selected Projects
 
 #cventry(
-  tl: "PingCAP, Inc.",
-  tr: "2020/08 - 2021/01",
-  bl: "Storage System R&D Intern",
-  br: "Shanghai, China"
+  tl: "ko-ok-OS/xv6-rust" + "(" + fa(star)+"168)" + " " + iconlink("https://github.com/Ko-oK-OS/xv6-rust", icon: github),
+  tr: "2021/02 - 2021/08"
 )[
-  - Built LSM-based storage engine *#iconlink("https://github.com/tikv/agatedb", icon: github, text: "AgateDB")* from ground-up. Inspired by WiscKey and BadgerDB, AgateDB separates large vallues from LSM tree into value log, so as to reduce write amplification.
-]
-
-== Open-Source Contributions
-
-#cventry(
-  tl: "cmu-db/busttub" + " " + iconlink("https://github.com/cmu-db/bustub", icon: github),
-  tr: "2022/08 - Now"
-)[
-  - Lead the development of the BusTub database system. Added SQL support/query processing layer to the system.
-  - Redesigned course projects to help students better understand the concepts and apply them to real-world scenarios. Developed leaderboard tests to challenge advanced students and enable further study.
+  - A Unix-like operating system implemented pure rust.
+  - Optimize memory module using Buddy Sytem.
+  - Redesign Spinlock/Sleeplock as smart pointer.
+  - Optimize file system, making it support Rust features.
 
 ]
 
 #cventry(
-  tl: "RisingLight Community" + " " + iconlink("https://github.com/risinglightdb", icon: github),
-  tr: "2022/01 - Now",
+  tl: "hypocaust-2" + "(" + fa(star)+"17)" + " " + iconlink("https://github.com/hypocaust-2", icon: github),
+  tr: "2023/02 - Now"
 )[
-  - Lead the development of *RisingLight*, an OLAP database system for educational purpose.
+  - A hardware-assisted RISC-V type-1 hypervisor written in Rust.
+  - Implement SBI call process, two stage page table translation, PLIC emulation(interrupt inject), exception delegation, passthrough or emulate devices.
+  - Boot rCore-Tutorial-v3, RT-Thread, Linux mainline.
 ]
 
 #cventry(
-  tl: "TiKV Community" + " " + iconlink("https://github.com/tikv", icon: github),
-  tr: "2020/05 - Now"
+  tl: "hypocaust" + "(" + fa(star)+"29)" + " " + iconlink("https://github.com/hypocaust-2", icon: github),
+  tr: "2023/01 - 2023/02"
 )[
-  - Maintains *TiKV Coprocessor*, the push-down execution framework of TiDB. Mentored community members to contribute features (e.g. new data types, plugin system) in the *LFX Mentorship*. #iconlink("https://github.com/tikv/tikv/issues/9066")  #iconlink("https://github.com/tikv/tikv/issues/9747")
+  - A S mode trap & emulate RISC-V type-1 hypervisor written in Rust.
+  - Implement SBI call process, shadow page table construction, synchronization between shadow page table and guest page table, PLIC emulation(interrupt inject), exception delegation, passthrough or emulate devices.
+  - Boot minikernel(a small os kernel with filesystem).
 ]
 
 #cventry(
-  tl: "Personal Projects",
-  tr: "5.3k followers " + iconlink(text: "skyzh", icon: github, "https://github.com/skyzh")
+  tl: "rCore-fat" + " " + iconlink("https://github.com/rCore-fat", icon: github),
+  tr: "2021/07 - 2021/08"
 )[
-  - *#iconlink(icon: github, text: "mini-lsm", "https://github.com/skyzh/mini-lsm")* (#fa[#star]1k) Build a simple LSM-Tree storage system in Rust in a week
-  - *#iconlink(icon: github, text: "type-exercise-in-rust", "https://github.com/skyzh/mini-lsm")* (#fa[#star]1k) Learn Rust generics by implementing a vectorized expression evaluation framework
+  - Design fat32 file system for rCore-Tutorial-v3, it is a alternative topic of rCore OS community in Summer OSPP 2021.
+  - It can run successfully on qemu and k210 development boards.
 ]
 
-#align(right, text(fill: gray)[Last Updated on Mar 30, 2023])
+
+== Talks & Presentations
+ - Hypocaust, a Type-1 RISC-V hypervisor, invited talk in OS2ATC 2022.
+
+== Experience
+#cventry(
+  tl: "Summer OSPP 2021",
+  tr: "2021/07 - 2021/09" 
+)[
+  - Participated in the work of the rcore-os community and supported the FAT32 file system for rCore-Tutorial-v3, successfully running it on QEMU and K210. My work won the Best Quality Award for the Summer of Open Source in 2021.
+]
+
+#cventry(
+  tl: "TWT Studio",
+  tr: "2019/09 - 2021/02",
+  bl: "Software Enginer",
+  br: "TianJin, China"
+)[
+  - Developed a management system for the school management system in Vue.js and it can run stably on the server.
+  - Maintained the school's party building system in PHP and participated in part of the system's reconstruction work.
+]
+
