@@ -14,7 +14,7 @@
   tl: "University of Chinese Academy of Sciences",
   tr:  "2023/08 - ",
   bl: "Master of Computer Architecture",
-  br: "HangZhou, ZheJiang, China"
+  br: "Hangzhou, Zhejiang, China"
 )[]
 #cventry(
   tl: "TianJin University",
@@ -23,6 +23,7 @@
   br: "TianJin, China"
 )[
   - Teaching Assistant for ICS(Introduction to Computer System) in Fall 2021
+  - 4.0 Courses: ICS, Computer Architecture, Advanced Computer Architecture, Operating System and so on.
 ]
 
 
@@ -42,7 +43,7 @@
 == Selected Projects
 
 #cventry(
-  tl: "ko-ok-OS/xv6-rust" + "(" + fa(star)+"168)" + " " + iconlink("https://github.com/Ko-oK-OS/xv6-rust", icon: github),
+  tl: "ko-ok-OS/xv6-rust" + "(" + fa(star)+"169)" + " " + iconlink("https://github.com/Ko-oK-OS/xv6-rust", icon: github),
   tr: "2021/02 - 2021/08"
 )[
   - A Unix-like operating system implemented pure rust.
@@ -58,7 +59,7 @@
 )[
   - A hardware-assisted RISC-V type-1 hypervisor written in Rust.
   - Implement SBI call process, two stage page table translation, PLIC emulation(interrupt inject), exception delegation, passthrough or emulate devices.
-  - Boot rCore-Tutorial-v3, RT-Thread, Linux mainline.
+  - Capable of booting rCore-Tutorial-v3, RT-Thread, Linux mainline.
 ]
 
 #cventry(
@@ -67,7 +68,7 @@
 )[
   - A S mode trap & emulate RISC-V type-1 hypervisor written in Rust.
   - Implement SBI call process, shadow page table construction, synchronization between shadow page table and guest page table, PLIC emulation(interrupt inject), exception delegation, passthrough or emulate devices.
-  - Boot minikernel(a small os kernel with filesystem).
+  - Capable of booting minikernel(a small os kernel with filesystem).
 ]
 
 #cventry(
@@ -80,7 +81,15 @@
 
 
 == Talks & Presentations
- - Hypocaust, a Type-1 RISC-V hypervisor, invited talk in OS2ATC 2022.
+#cventry(
+  tl: "Hypocaust, a Type-1 RISC-V hypervisor",
+  tr: "2023/03/26",
+  br: "Beijing, China"
+)[
+  - Invited talk in OS2ATC 2022.
+  - slide: http://kuangjux.top/file/talks/hypocaust.pdf
+  - vedio: https://live.csdn.net/room/csdnlive5/VKfSCOiR
+]
 
 == Experience
 #cventry(
