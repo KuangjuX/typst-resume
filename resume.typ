@@ -84,9 +84,9 @@
 #cventry(
   tl: "Hypocaust, a Type-1 RISC-V hypervisor",
   tr: "2023/03/26",
+  bl: "Invited talk in OS2ATC 2022",
   br: "Beijing, China"
 )[
-  - Invited talk in OS2ATC 2022.
   - slide: http://kuangjux.top/file/talks/hypocaust.pdf
   - vedio: https://live.csdn.net/room/csdnlive5/VKfSCOiR
 ]
